@@ -1,0 +1,6 @@
+# AstroArc runtime dependencies: none.
+#
+# AstroArc itself imports only the Python standard library (argparse, json,
+# hashlib, os, tempfile, datetime, ...). The single entry below is the test
+# runner used by `pytest` / `bash install.sh`; it is not imported at runtime.
+pytest==9.1.1

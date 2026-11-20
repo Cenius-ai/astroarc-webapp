@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astroarc"
+version = "1.0.0"
+description = "Record meteor showers, log hourly meteor counts, compare peaks across years"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["astronomy", "meteor", "cli", "observing-log"]
+dependencies = []
+
+[project.scripts]
+astroarc = "astroarc:main"
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.setuptools]
+py-modules = ["astroarc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100

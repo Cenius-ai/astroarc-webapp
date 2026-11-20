@@ -1,0 +1,17 @@
+# AstroArc
+demo-data/
+.astroarc/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# local environment (never commit real secrets)
+.env
+
+# tooling caches
+.ruff_cache/
